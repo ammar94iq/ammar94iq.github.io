@@ -19,12 +19,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
+        # تم حذف حقل version هنا ليتوافق تماماً مع packageManager في package.json ويمنع التعارض
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
