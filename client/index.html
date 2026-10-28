@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Ammar Abbas Al-Naili - PHP Laravel Backend Developer</title>
+    <meta name="description" content="Portfolio of Ammar Abbas Al-Naili, experienced PHP Laravel backend developer specializing in scalable web applications, REST APIs, and payment gateway integration." />
+    <meta name="keywords" content="PHP, Laravel, Backend Developer, REST API, E-commerce, Web Development" />
+    <meta property="og:title" content="Ammar Abbas Al-Naili - Backend Developer" />
+    <meta property="og:description" content="Experienced PHP Laravel backend developer with 5+ years of professional experience building scalable web applications." />
+    <meta property="og:image" content="/manus-storage/logo_18de55aa.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#10B981" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body dir="ltr">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Detect user's language preference and set initial direction
+      const userLang = localStorage.getItem('language') || navigator.language.split('-')[0];
+      if (userLang === 'ar') {
+        document.documentElement.dir = 'rtl';
+        document.documentElement.lang = 'ar';
+      } else {
+        document.documentElement.dir = 'ltr';
+        document.documentElement.lang = 'en';
+      }
+    </script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>
